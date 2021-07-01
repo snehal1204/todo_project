@@ -1,0 +1,30 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+ 
+  
+}
+
+a {
+  color: #00B7FF;
+}
+label{
+  margin-right: 10px;
+}
+div{
+  padding: 10px 0px;
+}
+
+
+input[type="Submit"]{
+  background-color: green;
+  color: white;
+}
+
+/* .abc{  */
+   /* width: 360px;  */
+   /* background: #f1f1f1;  */
+   /* height: 580px;  */
+   /* padding: 80px 40px;  */
+   /* border-radius: 10px;  */
+/* } */
