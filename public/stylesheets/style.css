@@ -1,30 +1,143 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
- 
+
+
+*{
+  box-sizing: border-box;
+  /* margin: 0; */
+  /* padding: 0; */
+  /* outline:none; */
+}
+
+
+ /* body {
+  color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("/todo_project/image/abc.jpg");
+ } */
+
+ /* body:hover {
+  color: green;
+
+
+@-webkit-keyframes identifier {}
+
+@keyframes identifier {} 
+# sourceMappingURL=style.css.map  */ 
+#userid{
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  margin-top: 100px;
+  font-size: 18px;
+
+  
   
 }
-
-a {
-  color: #00B7FF;
+#userName{
+  margin-left: 40px;
+  margin-bottom: 30px;
+  border:1px solid silver;
+  margin-top: 20px;
+  /* padding-bottom: 10px; */
+  height: 100%;
+  width:75%;
+  font-size: 17px;
+  padding-left: 10px;
+  padding-bottom: 4px;
+  
 }
-label{
-  margin-right: 10px;
+#password{
+  margin-right: 20px;
+  margin-left: 40px;
+  margin-top: 20px;
+  font-size: 18px;
 }
-div{
-  padding: 10px 0px;
+#userPassword{
+  margin-top: 20px;
+  margin-left: 40px;
+  /* padding-bottom: 10px; */
+  border: black;
+  height: 100%;
+  width: 75%;
+  font-size: 17px;
+  padding-left: 10px;
+  border: 1px solid silver;
+  padding-bottom: 4px;
+  
 }
-
-
-input[type="Submit"]{
-  background-color: green;
+#submit-id{
+  margin-top: 50px;
+  margin-left: 50px;
+  /* background-color: rgb(16, 13, 199); */
+  inline-size: 200px;
+  block-size: 40px;
+  font-size:18px;
+  border-radius: 10px;
+  height:100%;
+  width:75%;
+  /* background-color: #fff; */
+  text-transform: uppercase;
+  cursor:pointer;
+  letter-spacing: 1px;
+  background: -webkit-linear-gradient(right, #56d8e4,#9f01ea,#56d8e4,#9f01ea);
+  
+  
+}
+#submit-id:hover{
   color: white;
+  border: black;
+}
+#div1{
+background-color: rgb(218, 214, 214);
+  /* background-image: url("/todo_project/image/abc.jpg"); */
+  margin-right: 600px;
+  margin-left: 400px;
+  margin-top: 40px;
+  width: 450px;
+  height: 500px;
+  border:gray solid;
+  border-radius: 10px;
+}
+div:hover{
+  box-shadow: goldenrod 1px;
 }
 
-/* .abc{  */
-   /* width: 360px;  */
-   /* background: #f1f1f1;  */
-   /* height: 580px;  */
-   /* padding: 80px 40px;  */
-   /* border-radius: 10px;  */
-/* } */
+body{
+   /* background-color: blueviolet;     */
+  
+    background-image: url("../images/abc.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    display: -webkit-box;
+
+  }  
+h1{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1:hover{
+  color:green
+}
+#checkbox{
+  margin-left: 30px;
+  margin-top: 20px;
+}
+#signup{
+  margin-top: 500px;
+  margin-left: 350px;
+  font-size: large;
+  
+}
+#signup:hover{
+  transform: translate(10px);
+  box-shadow: goldenrod 10px;
+  text-decoration: underline;
+}
+
+.fa{
+  margin-right: 0.5px;
+  color: rgb(165, 161, 161);
+
+}

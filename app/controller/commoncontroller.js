@@ -1,5 +1,3 @@
-const { request, query } = require("express");
-const connection = require("express-myconnection");
 var todomodel=require("../model/todomodel");
 
 var commonController={
@@ -13,26 +11,24 @@ var commonController={
       
       });
     },
-  
-
-      
-
       login:function(request,responce,next){
         var getData =request.body;
        
         todomodel.login(responce.__pool,getData)
         .then(function(result){
-          console.log(result.length);
           if(result.length == 0){
-            responce.send({call:0,data:"Invalid User"})
+           responce.send({call:0})
           }else{
-            responce.redirect("/dashboard")
+            responce.send({call:1})
           }
        })
        .catch(function(error){
          responce.send({call:999,data:error});
     
    });
-  }
+  },
+    dashboard:function(req,res){
+      res.render('dashboard');
+    }
 };      
     module.exports=commonController;

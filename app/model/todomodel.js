@@ -16,12 +16,8 @@ var todomodel={
     },
     login:function(pool,checkData){
        return new Promise(function(resolve,reject){
-        //  var UserName=request.body.UserName;
-        //  var password=request.body.password;
-        //  if(UserName && password){
-         var query='SELECT * FROM logintable WHERE userName=? AND password=?';
-          
-         pool.query(query,[checkData.userName,checkData.userPassword],function(error,result){
+          var query='SELECT * FROM logintable WHERE userName=? AND password=?';
+           pool.query(query,[checkData.userName,checkData.userPassword],function(error,result){
            if(error){
               reject(error);
              }

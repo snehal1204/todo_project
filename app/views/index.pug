@@ -1,21 +1,30 @@
 extends layout
 
 block content 
-  div 
+
+  div(id="div1")
+  
     form(action="/login" method="post") 
-      h1 Login
-      div(class="abc")
-        label(for="") UserName
-        input(type="text" name="userName" placeholder="UserName")
-      div
-        label(for="") Password
-        input(type="password" name="userPassword" placeholder="password") 
+      h1 Login Form 
       div 
-        input(type="submit" value="login" id="submit-id")
-          
-      div 
+         label(for="" id="userid") UserName
       
-        a(href="http://Signup") SignUp 
+      
+      div
+        input(type="text" name="userName" placeholder="UserName" id="userName" class="fa")
+        i(class="fa fa-user")
+      div(class="abc")
+        label(for="" id="password" ) Password
+      div
+        input(type="password" name="userPassword" placeholder="Password" id="userPassword" class="fa")
+        i(class="fa fa-lock") 
+      div
+        input(type="submit" value="login" id="submit-id")
+      div
+        input(type="checkbox" name="checkbutton" id="checkbox") 
+        lable(for="") Remember me
+      div
+        a(href="http://Signup" id="signup") SignUp 
          
           
           

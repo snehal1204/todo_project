@@ -3,7 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-const dbConnection=require("../apptodo/app/config/db.config");
+const dbConnection=require("./app/config/db.config");
 const connection=dbConnection.myConnection(dbConnection.mysql,dbConnection.optionDB,'single');
 var routing = require('./routes');
 
